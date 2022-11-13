@@ -1,0 +1,146 @@
+html {
+    /* Design from https://brand.psu.edu/design-toolkit/design-essentials */
+
+    /* Pennsylvania palette */
+    --white-out: #ffffff;
+    --slate: #314d64;
+    --creek: #3ea39e;
+    --limestone: #a2aaad;
+    --pennsylvania-sky: #009cde;
+    --beaver-blue: #1e407c;
+    --nittany-navy: #001e44;
+
+    /* Classic accent palette */
+    --land-grant: #6a3028;
+    --lion-shrine: #b88965;
+    --lions-roar: #bf8226;
+    --penns-forest: #4a7729;
+    --pugh-blue: #96bee6;
+    --stately-atherton: #ac8dce;
+    --old-coaly: #444444;
+    --original-1887: #bc204b;
+
+    /* Vibrant accent palette */
+    --dawn-of-discovery: #f2665e;
+    --invent-orange: #e98300;
+    --bright-keystone: #ffd100;
+    --futures-calling: #99cc00;
+    --green-opportunity: #008755;
+    --perpetual-wonder: #491d70;
+    --endless-potential: #000321;
+
+    --transition-time: 0.3s;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0;
+    border: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--endless-potential);
+
+    font-family: "Rockwell";
+    text-transform: uppercase;
+    color: var(--white-out);
+}
+
+/* ===== Header ============================================================= */
+
+header {
+    height: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1.5rem;
+}
+
+h1 {
+    margin: 0;
+
+    font-family: "Rockwell";
+    text-transform: uppercase;
+    color: var(--white-out);
+    font-size: 3rem;
+}
+
+div.toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+div.toggle > button {
+    height: 5rem;
+    width: 6rem;
+
+    border-radius: 0.75rem;
+    border: 3px solid var(--white-out);
+    background-color: var(--endless-potential);
+    transition: var(--transition-time);
+}
+
+div.toggle > button > span {
+    font-size: 3rem;
+    color: var(--white-out);
+    transition: var(--transition-time);
+}
+
+div.toggle > button:hover {
+    background-color: var(--white-out);
+    transition: var(--transition-time);
+}
+
+div.toggle > button:hover > span {
+    color: var(--endless-potential);
+    transition: var(--transition-time);
+}
+
+header > div.input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+header > div.input > hr {
+    width: 30vw;
+    color: var(--white-out);
+    opacity: 0.5;
+}
+
+header > div.input > p {
+    font-size: 2rem;
+}
+
+header > div.input > input {
+    height: 3rem;
+    width: 10rem;
+
+    background-color: var(--endless-potential);
+    border-radius: 0.75rem;
+    border: 3px solid var(--white-out);
+
+    color: var(--white-out);
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+/* ===== Player list ======================================================== */
+
+div.playerlist {
+    height: 85vh;
+}
